@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors")
 module.exports = {
   content: ['./*.html'],
   theme: {
@@ -9,6 +10,8 @@ module.exports = {
     },
     extend: {
       colors:{
+        "cyans":colors.cyan,
+        "teal":colors.teal,
         brightRed:'hsl(12, 88%, 59%)',
         brightRedLight:'hsl(12,88%,69%)',
         brightRedSupLight:'hsl(12,88%,95%)',

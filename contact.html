@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="relative container mx-auto p-6">
+    <!-- flex container -->
+    <div class="flex items-center justify-between">
+    <!-- Logo -->
+    <div class="pt-2">
+      <a href="http://127.0.0.1:5500/index.html" ><img src="img/img/logo.svg" alt="logo"></a>
+    </div>
+    <!-- menu item -->
+    <div class=" hidden md:flex space-x-6">
+        <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+        <a href="#"class="hover:text-darkGrayishBlue">Product</a>
+        <a href="#"class="hover:text-darkGrayishBlue">About Us</a>
+        <a href="#"class="hover:text-darkGrayishBlue">Blog</a>
+        <a href="http://127.0.0.1:5500/contact.html"class="hover:text-darkGrayishBlue">Contact Us</a>
+    </div >
+    <!-- button -->
+    <a href="#" class=" hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline  hover:bg-brightRedLight">Get Start</a>
+
+    <!-- Hamburger -->
+    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
+    </div>
+    <!-- mobile menu -->
+    <div class="md:hidden">
+        <div id="menu" class="absolute  flex-col items-center hidden self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="http://127.0.0.1:5500/contact.html">Contact Us</a>
+        </div>
+    </div>
+    </nav>
+    
+  <!-- contact container -->
+  <div class="antialiased bg-white">
+  <div class="flex w-full min-h-screen justify-center items-center">
+      <div class="flex flex-col md:flex-row  md:space-x-6 space-y-6 md:space-y-0 bg-brightRed w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
+         <!--contact information  -->
+        <div class="flex flex-col space-y-8 justify-between">
+          <div>
+            <h1 class=" font-bold text-4xl tracking-wide"> Contact Us</h1>
+            <p class="pt-2 text-brightRedSupLight text-sm"> We will get back to use within the space of 24 working hours, Your complain is our priority </p>
+          </div>
+          <!-- icon items -->
+          <div class="flex flex-col space-y-6">
+            <div class="inline-flex space-x-2 items-center">
+              <ion-icon name="call" class="text-brightRedSupLight text-xl"></ion-icon>
+              <span>+(123) 347 39605</span>
+            </div>
+            <div class="inline-flex space-x-2 items-center">
+              <ion-icon name="mail" class="text-brightRedSupLight text-xl"></ion-icon>
+              <span>ContactUs@gmail.com</span>
+            </div>
+            <div class="inline-flex space-x-2 items-center">
+              <ion-icon name="location" class="text-brightRedSupLight text-xl"></ion-icon>
+              <span>12, street abc fgh</span>
+            </div>
+          </div>
+           <!--Social Medial Icon and Link  -->
+          <div class=" flex space-x-4 text-lg">
+            <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon> 
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon> 
+              </a>
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon> 
+            </a>
+            <a href="#">
+              <ion-icon name="logo-youtube"></ion-icon> 
+              </a>
+            <a href="#">
+                <ion-icon name="logo-pinterest"></ion-icon> 
+            </a>
+          </div> 
+        </div>
+         <!--Form informatiom  -->
+        <div class="relative"> 
+          <div class="absolute z-0 w-40 h-40 bg-brightRedSupLight rounded-full -right-28 -top-28">
+          </div>
+          <div class="absolute z-0 w-40 h-40 bg-brightRedSupLight rounded-full -left-28 -bottom-16"></div>
+          <div class="relative z-10 bg-white rounded-xl shadow-lg p-8  text-gray-600 md:w-80">
+            <form action="" class="flex flex-col space-y-4">
+              <div>
+                  <label for="" class="text-sm">Your name</label>
+                  <input type="text"
+                       placeholder="Your name" 
+                       class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-bg-brightRedSupLight ">
+              </div>
+              <div>
+                <label for="" class="text-sm">Email address</label>
+                <input type="text"
+                     placeholder="Email address" 
+                     class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-brightRedSupLight ">
+            </div>
+            <div>
+              <label for="" class="text-sm">Message</label>
+              <textarea
+                   rows="4"
+                   placeholder="Message" 
+                   class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-brightRedSupLight "></textarea>
+          </div>
+            <button class="inline-block self-end text-white bg-brightRed   hover:bg-brightRedLight rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>
+            </form>
+          </div>
+        </div> 
+      </div>
+  </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+</body>
+</html>
