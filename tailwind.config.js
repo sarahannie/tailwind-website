@@ -8,7 +8,12 @@ module.exports = {
       lg:'976px',
       xl:'1440px'
     },
+    
     extend: {
+      inset:{
+        '17':'68px',
+        '26':'104px'
+      },
       colors:{
         "cyans":colors.cyan,
         "teal":colors.teal,

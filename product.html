@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom fonts from cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/product.css">
+    <!-- javascript link -->
+    <script src="js/product.js" defer></script>
+    <!-- javascript link for search-bar -->
+    <script src='js/search.js' defer></script>
+    <title>Product</title>
+</head>
+<body>
+    
+        <div class="container">
+            <!-- search-box -->
+
+             <section class="title">
+                 <form>
+                     <i class="fas fa-search"></i>
+                     <input type="text" name="" id="search-item" placeholder="Search Books" onkeyup="search()">
+                 </form>
+             </section>
+
+            <div class="product-container" id="product-container">
+
+                <div class="product" data-name="p-1">
+                    <img 
+                    src="https://images.pexels.com/photos/2090104/pexels-photo-2090104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>POLAROID BOOK</h3>
+                    <div class="price">$2.00</div>
+                </div>
+
+                <div class="product" data-name="p-2">
+                    <img 
+                    src="https://images.pexels.com/photos/3747396/pexels-photo-3747396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>Dont Give A Fuck </h3>
+                    <div class="price">$5.00</div>
+                </div>
+
+                <div class="product" data-name="p-3">
+                    <img 
+                    src="https://images.pexels.com/photos/3831881/pexels-photo-3831881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&1dpr=1" 
+                    alt="book">
+                    <h3>Girls Power</h3>
+                    <div class="price">$3.50</div>
+                </div>
+
+                <div class="product" data-name="p-4">
+                    <img 
+                    src="https://images.pexels.com/photos/904620/pexels-photo-904620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>Soul River</h3>
+                    <div class="price">$4.00</div>
+                </div>
+
+                <div class="product" data-name="p-5">
+                    <img 
+                    src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>The Passion</h3>
+                    <div class="price">$2.00</div>
+                </div>
+
+                <div class="product" data-name="p-6">
+                    <img 
+                    src="https://images.pexels.com/photos/3747497/pexels-photo-3747497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>World Search</h3>
+                    <div class="price">$2.00</div>
+                </div>
+
+                <div class="product" data-name="p-7">
+                    <img 
+                    src="https://images.pexels.com/photos/6475044/pexels-photo-6475044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>Young Weather</h3>
+                    <div class="price">$10.00</div>
+                </div>
+
+                <div class="product" data-name="p-8">
+                    <img 
+                    src="https://images.pexels.com/photos/3747163/pexels-photo-3747163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>ONE SIMPLE LAST TIME</h3>
+                    <div class="price">$8.00</div>
+                </div>
+
+                <div class="product" data-name="p-9">
+                    <img 
+                    src="https://images.pexels.com/photos/6954514/pexels-photo-6954514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>THE SPRINT</h3>
+                    <div class="price">$6.00</div>
+                </div>
+
+                <div class="product" data-name="p-10">
+                    <img 
+                    src="https://images.pexels.com/photos/2090104/pexels-photo-2090104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>POLAROID</h3>
+                    <div class="price">$2.00</div>
+                </div>
+
+                <div class="product" data-name="p-11">
+                    <img 
+                    src="https://images.pexels.com/photos/7218411/pexels-photo-7218411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>IN THE MIDDLE OF THE SEA</h3>
+                    <div class="price">$52.00</div>
+                </div>
+
+                <div class="product" data-name="p-12">
+                    <img 
+                    src="https://images.pexels.com/photos/5199754/pexels-photo-5199754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>A WORLD CALLED HOLY</h3>
+                    <div class="price">$26.00</div>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- product-preview -->
+
+    <div class="product-preview">
+        
+            <div class="preview " data-target="p-1">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/2090104/pexels-photo-2090104.jpeg?auto=compress&cs=tinysrgb&w=200" 
+                    alt="book">
+                    <h3 > POLAROID BOOK</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic</p>
+                    <div class="price">$2.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-2">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/3747396/pexels-photo-3747396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>Dont Give A Fuck </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic</p>
+                    <div class="price">$5.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-3">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/3831881/pexels-photo-3831881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&1dpr=1" 
+                    alt="book">
+                    <h3>Girls Power</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic</p>
+                    <div class="price">$3.50</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-4">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/904620/pexels-photo-904620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>Soul River</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic</p>
+                    <div class="price">$4.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-5">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>The Passion</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic</p>
+                    <div class="price">$2.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-6">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/3747497/pexels-photo-3747497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>World Search</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic</p>
+                    <div class="price">$2.00</div>
+                    <div class="button">
+                        <a> href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-7">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/6475044/pexels-photo-6475044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>Young Weather</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic</p>
+                    <div class="price">$10.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-8">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/3747163/pexels-photo-3747163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>ONE SIMPLE LAST TIME</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic,<</p>
+                    <div class="price">$8.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-9">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/6954514/pexels-photo-6954514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>THE SPRINT</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic </p>
+                    <div class="price">$6.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-10">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/2090104/pexels-photo-2090104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>POLAROID BOOK</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic </p>
+                    <div class="price">$2.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-11">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/7218411/pexels-photo-7218411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>IN THE MIDDLE OF THE SEA</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic </p>
+                    <div class="price">$52.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-12">
+                    <i class="fas fa-times"></i>
+                    <img 
+                    src="https://images.pexels.com/photos/5199754/pexels-photo-5199754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    alt="book">
+                    <h3>A WORLD CALLED HOLY</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(250)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quod facilis quibusdam reiciendis provident maxime hic </p>
+                    <div class="price">$26.00</div>
+                    <div class="button">
+                        <a href="#" class="Read"> Read Now</a>
+                        <a href="#" class="Cart">Add To Cart</a>
+                    </div>
+                </div>
+
+               
+    </div>
+</body>
+</html>
